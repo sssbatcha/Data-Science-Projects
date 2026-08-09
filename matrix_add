@@ -1,0 +1,10 @@
+rows,cols = 2,2
+matrixA=[[2,1],[4,3]]
+matrixB=[[2,1],[4,3]]
+res = [[0,0],[0,0]]
+for r in range(rows):
+    for c in range(cols):
+        res[r][c]=matrixA[r][c]+matrixB[r][c]
+print("Sum of the two matrixs")
+for row in res:
+    print(' '.join(map(str,row)))
